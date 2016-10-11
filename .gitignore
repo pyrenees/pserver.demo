@@ -5,3 +5,4 @@ __pycache__
 .eggs
 parts
 src/
+data/Data*
