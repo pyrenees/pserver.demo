@@ -3,6 +3,9 @@ __pycache__
 *.egg-info
 *.pyc
 .eggs
+develop-eggs
+bin
+eggs
 parts
 src/
 data/Data*
