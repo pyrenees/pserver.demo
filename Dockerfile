@@ -17,7 +17,7 @@ ENV LANGUAGE C.UTF-8
 ENV LC_ALL C.UTF-8
 
 # Install buildout
-RUN cd /app; python3.5 bootstrap-buildout.py
+RUN cd /app; python3.5 bootstrap.py
 
 # Run buildout
 RUN cd /app; ./bin/buildout -vvv
