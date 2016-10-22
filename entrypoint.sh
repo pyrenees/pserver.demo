@@ -1,4 +1,7 @@
 #!/bin/bash
+exec "$@" &
+
+while ! nc -z localhost 8080; do sleep 10; done
 
 curl -X POST -H "Accept: application/json" -H "Authorization: Basic YWRtaW4=" -H "Content-Type: application/json" -d '{
     "@type": "Plone Site",
@@ -18,7 +21,8 @@ curl -X POST -H "Accept: application/json" -H "Authorization: Basic YWRtaW4=" -H
     "@type": "Item",
     "title": "News",
     "id": "news"
-}' "http://127.0.0.1:8080/plone/site1/"
+}' "http://127.0.0.1:8080/zodb1/plone/"
 
-
-exec "$@"
+while :; do
+  sleep 300
+done
