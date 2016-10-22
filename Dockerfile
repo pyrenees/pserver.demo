@@ -5,7 +5,7 @@ MAINTAINER Plone Community
 RUN apt-get update -y
 
 # Install Python Setuptools
-RUN apt-get install -y locales git-core gcc g++ netcat libxml2-dev libxslt-dev libz-dev build-essentials
+RUN apt-get install -y locales git-core gcc g++ netcat libxml2-dev libxslt-dev libz-dev build-essential
 
 RUN mkdir /app
 
