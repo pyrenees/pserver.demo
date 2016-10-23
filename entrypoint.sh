@@ -1,4 +1,6 @@
 #!/bin/bash
+
+set -m 
 exec "$@" &
 
 while ! nc -z localhost 8080; do sleep 10; done
