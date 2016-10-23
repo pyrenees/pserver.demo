@@ -23,6 +23,4 @@ curl -X POST -H "Accept: application/json" -H "Authorization: Basic YWRtaW4=" -H
     "id": "news"
 }' "http://127.0.0.1:8080/zodb1/plone/"
 
-while :; do
-  sleep 300
-done
+fg
