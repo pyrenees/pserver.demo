@@ -3,7 +3,7 @@
         {
         "zodb1": {
             "storage": "ZODB",
-            "folder": "data"
+            "path": "data/Data.fs"
             }
         }
     ],
